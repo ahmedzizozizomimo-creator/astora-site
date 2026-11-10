@@ -1,1 +1,1 @@
-# astora.
+# astora
