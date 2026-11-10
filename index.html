@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ASTORA | حمّل تطبيق رياضيات أ. محمد رمضان مجانًا</title>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14193F;--ink2:#2B3270;--paper:#F5F6FC;--card:#fff;--line:#E1E4F3;--sun:#FFB627;--sun-ink:#4A3000;--mint:#12B886;--muted:#6B7099;--hero:#14193F;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#EEF0FF;--ink2:#B9C0F5;--paper:#0C0F26;--card:#161B3F;--line:#262C5C;--muted:#9AA1D6;--hero:#1E2564;color-scheme:dark}}
+:root[data-theme="dark"]{--ink:#EEF0FF;--ink2:#B9C0F5;--paper:#0C0F26;--card:#161B3F;--line:#262C5C;--muted:#9AA1D6;--hero:#1E2564;color-scheme:dark}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:'Readex Pro','Segoe UI',Tahoma,sans-serif;background:var(--paper);color:var(--ink);line-height:1.7}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:10px}
+.w{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:19px;letter-spacing:.14em;direction:ltr}
+.logo{width:34px;height:34px;border-radius:11px;background:var(--ink);display:grid;place-items:center}
+nav.l{display:flex;gap:22px;font-size:14px;color:var(--muted)}
+nav.l a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:10px;height:54px;padding:0 22px;border-radius:16px;font-weight:700;font-size:15px;transition:transform .15s}
+.btn:active{transform:scale(.97)}
+.btn.p{background:var(--sun);color:var(--sun-ink)}
+.btn.s{background:var(--card);border:1px solid var(--line)}
+.btn small{display:block;font-weight:400;font-size:11px;opacity:.75;line-height:1.2}
+.btn svg{width:22px;height:22px;flex:none}
+.hero{padding:44px 0 56px}
+.hero .w{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.badge{display:inline-flex;gap:8px;align-items:center;font-size:13px;padding:6px 14px;border-radius:99px;background:color-mix(in srgb,var(--mint) 15%,transparent);color:var(--mint);font-weight:600}
+h1{font-size:clamp(30px,6vw,50px);line-height:1.3;margin:16px 0 14px}
+.lead{color:var(--muted);font-size:17px;max-width:480px}
+.dl{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 14px}
+.meta{font-size:13px;color:var(--muted)}
+/* phone */
+.stage{position:relative;display:grid;place-items:center;min-height:470px;border-radius:36px;background:linear-gradient(150deg,var(--hero),var(--ink2));overflow:hidden}
+.stage svg.bg{position:absolute;inset:0;width:100%;height:100%}
+.phone{position:relative;width:236px;height:420px;border-radius:34px;background:var(--paper);border:7px solid #0B0E26;padding:14px;box-shadow:0 30px 60px rgba(0,0,0,.4);color:var(--ink)}
+.phone .t{font-size:11px;color:var(--muted)}.phone h3{font-size:15px;margin:2px 0 10px}
+.pc{border-radius:18px;padding:12px;background:linear-gradient(150deg,#14193F,#2B3270);color:#fff;font-size:12px}
+.pc b{display:block;font-size:14px;margin:4px 0 8px}
+.pb{height:6px;border-radius:9px;background:rgba(255,255,255,.2)}.pb i{display:block;height:100%;width:58%;border-radius:9px;background:var(--sun)}
+.pg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.pg div{padding:10px;border-radius:14px;background:var(--card);border:1px solid var(--line);font-size:11px}
+.pg span{display:block;font-size:18px;font-weight:700;direction:ltr;color:var(--ink2)}
+/* sections */
+section{padding:54px 0}
+h2{font-size:clamp(24px,4vw,32px);margin-bottom:8px}
+.sub{color:var(--muted);max-width:560px}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:28px}
+.f{padding:22px;border-radius:22px;background:var(--card);border:1px solid var(--line)}
+.f .i{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-size:21px;font-weight:700;margin-bottom:12px;direction:ltr;background:#FFF1CC;color:#8A5A00}
+.f:nth-child(2) .i{background:#E6E8FF;color:#3A44A8}.f:nth-child(3) .i{background:#D9F6EA;color:#0B7A57}.f:nth-child(4) .i{background:#FFE3E4;color:#B02A30}
+.f b{display:block;margin-bottom:4px}.f p{font-size:14px;color:var(--muted)}
+/* updates */
+.up{display:grid;grid-template-columns:1fr 1.3fr;gap:36px;align-items:start}
+.log{border-inline-start:2px solid var(--line);padding-inline-start:22px;display:grid;gap:22px}
+.v{position:relative}
+.v::before{content:"";position:absolute;inset-inline-start:-30px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--line);border:2px solid var(--paper)}
+.v.new::before{background:var(--sun)}
+.v b{font-size:17px}.v .d{font-size:12px;color:var(--muted);margin-inline-start:8px}
+.v ul{margin-top:6px;padding-inline-start:18px;color:var(--muted);font-size:14px}
+.price{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}.pl{padding:26px;border-radius:26px;background:var(--card);border:1px solid var(--line)}.pl.paid{border:2px solid var(--sun)}.pl h3{font-size:20px;display:flex;align-items:center;gap:10px;margin-bottom:4px}.pl .t{font-size:12px;padding:3px 11px;border-radius:99px;font-weight:600}.pl:not(.paid) .t{background:color-mix(in srgb,var(--mint) 15%,transparent);color:var(--mint)}.pl.paid .t{background:var(--sun);color:var(--sun-ink)}.pl>p{font-size:14px;color:var(--muted);margin-bottom:14px}.pl ul{list-style:none;display:grid;gap:10px}.pl li{display:flex;gap:10px;font-size:15px}.pl li::before{content:"✓";color:var(--mint);font-weight:700}.pl.paid li::before{content:"★";color:var(--sun)}.pn{margin-top:16px;font-size:13px;color:var(--muted);text-align:center}#admin{background:var(--card);border-block:1px solid var(--line)}#admin[hidden]{display:none}.fm{display:grid;gap:12px;max-width:620px;margin-top:18px}.fm label{font-size:13px;color:var(--muted);display:grid;gap:6px}.fm input,.fm textarea{font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:12px 14px;width:100%}.fm textarea{min-height:90px}.fm .r2{display:grid;grid-template-columns:1fr 1fr;gap:12px}#as{font-size:14px;color:var(--ink2);min-height:22px}dialog{margin:auto;border:1px solid var(--line);border-radius:26px;padding:28px 24px;max-width:380px;width:calc(100% - 40px);background:var(--card);color:var(--ink);text-align:center;box-shadow:0 30px 70px rgba(0,0,0,.35)}dialog::backdrop{background:rgba(10,12,35,.6);backdrop-filter:blur(4px)}dialog .ic{width:60px;height:60px;border-radius:20px;background:var(--sun);color:var(--sun-ink);display:grid;place-items:center;font-size:28px;margin:0 auto 14px}dialog h3{font-size:20px;margin-bottom:8px}dialog p{font-size:14px;color:var(--muted);margin-bottom:20px}dialog .btn{width:100%;justify-content:center}.note{margin-top:22px;padding:16px;border-radius:18px;background:var(--card);border:1px solid var(--line);font-size:14px;display:flex;gap:12px}
+/* legal */
+.legal{background:var(--card);border-block:1px solid var(--line)}
+details{border:1px solid var(--line);border-radius:18px;background:var(--paper);margin-top:12px;padding:0 18px}
+summary{cursor:pointer;padding:16px 0;font-weight:600;list-style:none;display:flex;justify-content:space-between}
+summary::after{content:"+";font-size:20px;color:var(--muted)}details[open] summary::after{content:"−"}
+details p,details li{font-size:14px;color:var(--muted);margin-bottom:10px}
+details ul{padding-inline-start:18px;margin-bottom:14px}
+footer{padding:34px 0 44px;font-size:13px;color:var(--muted)}
+footer .w{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
+@media(max-width:820px){.hero .w,.up,.price{grid-template-columns:1fr}nav.l{display:none}.stage{min-height:440px}.btn{flex:1 1 100%;justify-content:center}}
+</style>
+</head>
+<body>
+<header><div class="w">
+  <a class="brand" href="#top"><span class="logo"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M12 2l2.6 6.4L21 9l-5 4.4L17.5 20 12 16.6 6.5 20 8 13.4 3 9l6.4-.6z" fill="#FFB627"/></svg></span>ASTORA</a>
+  <nav class="l"><a href="#features">المميزات</a><a href="#updates">التحديثات</a><a href="#legal">الخصوصية والشروط</a></nav>
+  <a class="btn p" style="height:42px;padding:0 18px;font-size:14px" href="#download">حمّل الآن</a>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="w">
+  <div>
+    <span class="badge">● تحميل التطبيق مجاني</span>
+    <h1>رياضيات أسهل مع أ. محمد رمضان، في جيبك</h1>
+    <p class="lead">شرح مبسّط، تمارين فورية، وحصص مباشرة. حمّل ASTORA مجانًا وابدأ بالدروس المفتوحة، وافتح الكورسات والحصص المتقدمة وقت ما تحب.</p>
+    <div class="dl" id="download">
+      <a class="btn p" href="#" data-store="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 3l10 9-10 9zM16 10l3.5 2-3.5 2-1.8-2zM15 9l-1.6 1.4L5.5 3.3 15 9zm0 6L5.5 20.7l7.9-7.1z" opacity=".95"/></svg><span><small>قريبًا على</small>Google Play</span></a>
+      <a class="btn s" href="#" data-store="apk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 20h16"/></svg><span><small>تحميل مباشر</small>ملف APK</span></a>
+      <a class="btn s" href="#" data-store="ios"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.600-2.800-1.800-3.400-1.800-1.400-.1-2.800.9-3.500.9s-1.900-.8-3.100-.8c-1.600 0-3.100.9-3.900 2.400-1.700 2.900-.4 7.200 1.200 9.500.8 1.200 1.700 2.400 3 2.400 1.200 0 1.700-.8 3.100-.8s1.900.8 3.100.8c1.300 0 2.100-1.200 2.900-2.300.9-1.300 1.300-2.600 1.300-2.700-.1 0-2.700-1-2.700-4.100zM14.200 5.800c.6-.8 1.100-1.900.9-3-.9 0-2.100.6-2.700 1.400-.6.700-1.100 1.800-.9 2.900 1 .1 2.100-.5 2.700-1.300z"/></svg><span><small>قريبًا على</small>App Store</span></a>
+    </div>
+    <p class="meta" id="meta" data-render>الإصدار <b>1.0.0</b> · أندرويد 7 فأعلى · حجم تقريبي 28 ميجا</p>
+  </div>
+  <div class="stage" aria-hidden="true">
+    <svg class="bg" viewBox="0 0 400 470" preserveAspectRatio="xMidYMid slice"><g stroke="rgba(255,255,255,.07)"><path d="M0 80H400M0 160H400M0 240H400M0 320H400M0 400H400M80 0V470M160 0V470M240 0V470M320 0V470"/></g><path d="M10 450 Q200 -120 390 450" fill="none" stroke="rgba(255,182,39,.5)" stroke-width="2.5" stroke-dasharray="2 8" stroke-linecap="round"/><circle cx="200" cy="82" r="6" fill="#FFB627"/></svg>
+    <div class="phone">
+      <div class="t">صباح الخير</div><h3>كمّل من حيث وقفت</h3>
+      <div class="pc">الوحدة ٣ · المعادلات التربيعية<b>حل المعادلة بالتحليل</b><div class="pb"><i></i></div></div>
+      <div class="pg"><div>الجبر<span>x²</span></div><div>الهندسة<span>△</span></div><div>التفاضل<span>∫</span></div><div>الإحصاء<span>σ</span></div></div>
+    </div>
+  </div>
+</div></div>
+
+<section id="features"><div class="w">
+  <h2>كل اللي محتاجه علشان تفهم وتتفوّق</h2>
+  <p class="sub">التطبيق اتصمم مخصوص لطلاب الرياضيات، وتحميله مجاني.</p>
+  <div class="feat">
+    <div class="f"><div class="i">▶</div><b>شرح بالفيديو</b><p>دروس مرتبة من أ. محمد رمضان، وتقدر ترجع لأي جزء في أي وقت.</p></div>
+    <div class="f"><div class="i">x²</div><b>تمارين فورية</b><p>اختار الإجابة وشوف الحل والتصحيح في نفس اللحظة.</p></div>
+    <div class="f"><div class="i">●</div><b>حصص مباشرة</b><p>احجز مكانك في المراجعات وكلّم الأستاذ على الهواء.</p></div>
+    <div class="f"><div class="i">★</div><b>متابعة تقدمك</b><p>نقاط وأيام متتالية وشريط تقدم لكل وحدة تحفزك تكمل.</p></div>
+  </div>
+</div></section>
+
+<section id="pricing"><div class="w">
+  <h2>التطبيق مجاني، والكورسات بتختارها بنفسك</h2>
+  <p class="sub">ابدأ بالمحتوى المجاني، ولو عجبك الشرح افتح الكورس اللي محتاجه.</p>
+  <div class="price">
+    <div class="pl"><h3>مجاني <span class="t">بدون دفع</span></h3><p>كل اللي تحتاجه علشان تبدأ.</p><ul><li>تحميل التطبيق واستخدامه</li><li>دروس تعريفية مفتوحة من كل وحدة</li><li>تمرين يومي بالنقاط</li><li>متابعة التقدم والوضع الليلي</li></ul></div>
+    <div class="pl paid"><h3>مدفوع <span class="t">كورسات وحصص</span></h3><p>محتوى متقدم بتفتحه حسب احتياجك.</p><ul><li>كورسات كاملة لكل وحدة بالتفصيل</li><li>الحصص المباشرة مع أ. محمد رمضان</li><li>مراجعات نهائية واختبارات شاملة</li><li>تصحيح وتحليل لمستواك</li></ul></div>
+  </div>
+  <p class="pn">سعر أي كورس أو حصة بيظهر لك جوه التطبيق قبل ما تشتري.</p>
+</div></section>
+
+<section id="updates" style="background:var(--card);border-block:1px solid var(--line)"><div class="w up">
+  <div>
+    <h2>تحديثات بتوصلك لوحدها</h2>
+    <p class="sub">التطبيق بيتحدّث تلقائيًا: دروس جديدة وتمارين وإصلاحات تظهر عندك من غير ما تحمّل حاجة تاني.</p>
+    <div class="note"><span>🔔</span><span>أول ما تفتح التطبيق بيشيّك على آخر إصدار، ولو فيه نسخة أحدث هيعرض لك زر "حدّث الآن".</span></div>
+  </div>
+  <div class="log" id="log" data-render>
+    <div class="v new"><b>الإصدار 1.0.0</b><span class="d">أحدث إصدار</span><ul><li>إطلاق التطبيق بوحدات الجبر والهندسة</li><li>التمارين الفورية والحصص المباشرة</li><li>الوضع الليلي</li></ul></div>
+    <div class="v"><b>الإصدار 1.1.0</b><span class="d">قريبًا</span><ul><li>وحدة التفاضل والتكامل</li><li>تحميل الدروس للمشاهدة بدون إنترنت</li></ul></div>
+  </div>
+</div></section>
+
+<section class="legal" id="legal"><div class="w">
+  <h2>الخصوصية والشروط</h2>
+  <p class="sub">بنوضّح بشكل مبسّط إزاي بنتعامل مع بياناتك، وده مطلوب لنشر التطبيق وتشغيل الإعلانات.</p>
+  <details><summary>سياسة الخصوصية</summary>
+    <ul><li>بنجمع أقل بيانات ممكنة: الاسم والمرحلة الدراسية وتقدمك داخل الدروس.</li><li>التطبيق مجاني ويعرض إعلانات من خدمات إعلانية طرف ثالث مثل Google AdMob، وقد تستخدم هذه الخدمات معرّف الإعلانات في جهازك لعرض إعلانات مناسبة.</li><li>لا نبيع بياناتك لأي جهة.</li><li>تقدر تعطّل الإعلانات المخصصة من إعدادات جهازك في أي وقت.</li><li>بيانات الأطفال: التطبيق موجّه للطلاب، ولو أنت أقل من 13 سنة يلزم موافقة ولي الأمر.</li><li>لطلب حذف بياناتك راسلنا على: support@astora.app</li></ul></details>
+  <details><summary>شروط الاستخدام</summary>
+    <ul><li>تحميل التطبيق واستخدامه مجاني، وبعض الدروس والحصص والكورسات مدفوعة ويظهر سعرها قبل الشراء.</li><li>الاشتراك في كورس أو حصة يعطيك حق المشاهدة الشخصية فقط، ولا يمكن مشاركة حسابك مع الآخرين.</li><li>يمنع نسخ الدروس أو إعادة نشرها أو بيعها بدون إذن كتابي.</li><li>نحتفظ بحق تعديل المحتوى والتطبيق في أي وقت.</li></ul></details>
+  <details><summary>حقوق النشر والملكية</summary>
+    <p>جميع الدروس والفيديوهات والتصاميم والشعار ملك لـ ASTORA والأستاذ محمد رمضان، وجميع الحقوق محفوظة. العلامات التجارية الأخرى مثل Google Play وApp Store ملك لأصحابها.</p></details>
+</div></section>
+</main>
+
+<script type="application/json" id="state">{"version":"1.0.0","android":"7","size":"","links":{"play":"","apk":"","ios":""},"releases":[{"v":"1.0.0","date":"10/11/2026","notes":["إطلاق التطبيق بوحدات الجبر والهندسة","التمارين الفورية والحصص المباشرة","الوضع الليلي"]}]}</script>
+<dialog id="soon" aria-labelledby="sh"><div class="ic">⏳</div><h3 id="sh">لسه ما نزلش</h3><p id="sp"></p><button class="btn p" id="sx">تمام، فهمت</button></dialog>
+
+<footer><div class="w">
+  <span>© 2026 ASTORA · جميع الحقوق محفوظة</span>
+  <span style="direction:ltr">Developed by AHMED</span>
+  <span>للتواصل: support@astora.app</span>
+</div></footer>
+<script>
+// حط رابط المتجر هنا أول ما التطبيق ينزل، وهيشتغل الزر تلقائيًا
+var ST=JSON.parse(document.getElementById('state').textContent);
+var STORES={play:{n:'Google Play',url:ST.links.play},apk:{n:'تحميل ملف APK',url:ST.links.apk},ios:{n:'App Store',url:ST.links.ios}};
+var dlg=document.getElementById('soon');
+document.querySelectorAll('[data-store]').forEach(function(a){a.addEventListener('click',function(e){
+  var s=STORES[a.dataset.store];if(s.url){a.href=s.url;return}
+  e.preventDefault();
+  document.getElementById('sp').textContent='التطبيق لسه ما نزلش على '+s.n+'، وإن شاء الله هينزل قريب. تابعنا وهتلاقي الرابط هنا أول ما يتاح.';
+  dlg.showModal();
+})});
+document.getElementById('sx').addEventListener('click',function(){dlg.close()});
+dlg.addEventListener('click',function(e){if(e.target===dlg)dlg.close()});
+</script>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+function esc(t){var d=document.createElement('div');d.textContent=t;return d.innerHTML}
+function render(){
+  $('meta').innerHTML='الإصدار <b>'+esc(ST.version)+'</b> · أندرويد '+esc(ST.android)+' فأعلى'+(ST.size?' · الحجم '+esc(ST.size):'');
+  $('log').innerHTML=ST.releases.map(function(r,i){return '<div class="v'+(i===0?' new':'')+'"><b>الإصدار '+esc(r.v)+'</b><span class="d">'+(i===0?'أحدث إصدار · ':'')+esc(r.date)+'</span><ul>'+r.notes.map(function(n){return '<li>'+esc(n)+'</li>'}).join('')+'</ul></div>'}).join('');
+}
+render();
+fetch('releases.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(function(d){
+  ST=d;STORES.play.url=d.links.play;STORES.apk.url=d.links.apk;STORES.ios.url=d.links.ios;render();
+}).catch(function(){});
+})();
+</script>
+</body>
+</html>
